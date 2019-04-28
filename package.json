@@ -1,6 +1,7 @@
 {
-  "name": "n-framework",
+  "name": "@naweak/n",
   "version": "0.0.1",
+  "private": false,
   "description": "Simple WebAPI Framework",
   "main": "index.js",
   "keywords": [
