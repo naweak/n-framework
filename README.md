@@ -11,7 +11,7 @@ npm i @naweak/n -S
 ```js
 const Framework = require('@naweak/n')
 const app = new Framework({
-  methodsDir: __dirname + '/src/methods', // Your API methods dir
+  methodsDir: __dirname + '/src/methods/', // Your API methods dir
   host: '127.0.0.1', // Your project hostname
   port: 3000 // Your project port
 })
