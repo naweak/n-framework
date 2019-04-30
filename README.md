@@ -23,7 +23,7 @@ app.runServer()
 ### Successful response
 
 ```js
-// src/exampleSuccessMethod.js
+// src/methods/exampleSuccessMethod.js
 // Demonstrates successful response
 const Response = require('@naweak/n/lib/response')
 
@@ -62,16 +62,15 @@ $ curl "http://127.0.0.1:3000/api/?method=exampleSuccessMethod&test=123"
 ### Error response
 
 ```js
-// src/exampleErrorMethod.js
+// src/methods/exampleErrorMethod.js
 // Demonstrates error response
-const Response = require('@naweak/n/lib/response')
+const ErrorResponse = require('@naweak/n/lib/error')
 
 module.exports = {
   run() {
-    return new Response(
+    return new ErrorResponse(
       'Failed', // Error data
-      11, // Error code
-      true // isError
+      11 // Error code
     )
   }
 }

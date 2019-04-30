@@ -23,7 +23,7 @@ app.runServer()
 ### Успех
 
 ```js
-// src/exampleSuccessMethod.js
+// src/methods/exampleSuccessMethod.js
 const Response = require('@naweak/n/lib/response')
 
 module.exports = {
@@ -61,15 +61,14 @@ $ curl "http://127.0.0.1:3000/api/?method=exampleSuccessMethod&test=123"
 ### Ошибка
 
 ```js
-// src/exampleErrorMethod.js
-const Response = require('@naweak/n/lib/response')
+// src/methods/exampleErrorMethod.js
+const ErrorResponse = require('@naweak/n/lib/error')
 
 module.exports = {
   run() {
-    return new Response(
+    return new ErrorResponse(
       'Failed', // Данные ошибки
-      11, // Код ошибки
-      true // isError
+      11 // Код ошибки
     )
   }
 }
