@@ -1,6 +1,6 @@
 {
   "name": "@naweak/n",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "private": false,
   "description": "Simple WebAPI Framework",
   "main": "index.js",
